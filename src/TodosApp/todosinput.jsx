@@ -18,7 +18,7 @@ export const TodoInput=(props)=>{
 
         <div>
             <input placeholder="Enter Text" value={props.inputval} onChange={ChangeInputvalue}/>
-            <button style={{marginLeft: "50px", backgroundColor: "black" ,color: "green"}} 
+            <button style={{marginLeft: "50px", backgroundColor: "black" ,color: "white"}} 
             onClick={handleSubmit}>
             Submit Task
             </button>

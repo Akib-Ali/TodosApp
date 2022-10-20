@@ -2,9 +2,11 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { TodoMain } from './TodosApp/todomain'
+import { useState } from 'react'
 
 
 function App() {
+
  
 
 
@@ -14,12 +16,8 @@ function App() {
   return (
     <div className="App">
 
-  <TodoMain/>
-
-  
-  
-          
-    </div>
+   <TodoMain/> 
+   </div>
   )
 }
 

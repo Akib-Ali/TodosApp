@@ -7,6 +7,17 @@ export const TodoMain=()=>{
     const [inputval, setinputval]= useState("")
     const [todos , settodos]= useState([])
 
+
+    const handleDelete=(id)=>{
+      let updatedtodo = todos.filter((elem,index)=>{
+        return  index !== id
+      })
+
+      settodos(updatedtodo)
+
+
+    }
+
     return(
         <div>
             <h1>Todo App </h1>
@@ -22,7 +33,9 @@ export const TodoMain=()=>{
                 <TodoList 
                     key={index}
                     id={index}
+                    index={index}
                     elem={elem}
+                    handleDelete={handleDelete}
                 />
 
              ))}

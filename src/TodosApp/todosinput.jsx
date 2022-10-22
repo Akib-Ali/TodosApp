@@ -1,7 +1,8 @@
 export const TodoInput=(props)=>{
 
 
-    const ChangeInputvalue=(event)=>{
+    const ChangeInputvalue=(event)=>{                       
+    
         props.setinputval(event.target.value)
    }
 

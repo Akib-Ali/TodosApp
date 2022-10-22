@@ -10,7 +10,7 @@ export const TodoMain=()=>{
 
     const handleDelete=(id)=>{
       let updatedtodo = todos.filter((elem,index)=>{
-        return  index !== id
+        return  index != id
       })
 
       settodos(updatedtodo)
